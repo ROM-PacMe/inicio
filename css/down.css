@@ -1,0 +1,143 @@
+body {
+  background: #eee;
+  color: #5b5b5b;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.2;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: #1e88e5;
+  text-decoration: none;
+  border-bottom: 1px dotted rgba(0, 0, 0, 0.4);
+}
+
+a:hover,
+a:focus {
+  border-bottom: 1px solid #1e88e5;
+  outline: none;
+}
+
+.main_content {
+  background-color: #fff;
+  border: solid 1px #bebebe;
+  box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.08);
+  text-align: center;
+  width: 350px;
+  padding: 12px;
+  margin: 40px auto 0 auto;
+}
+
+.header {
+  display: inherit;
+  margin-bottom: 10px;
+}
+
+.app_image {
+  height: 440px;
+  width: 440px;
+  overflow: hidden;
+  border-radius: 20px;
+  margin: 0 auto 10px auto;
+}
+
+.app_image > span {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+}
+
+.button {
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Open Sans", sans-serif;
+  color: #1e88e5;
+  text-transform: uppercase;
+  background: #fff;
+  cursor: pointer;
+  border: 1px solid #1e88e5;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 100px;
+  padding: 8px 14px;
+  margin-bottom: 25px;
+  transition-duration: 0.2s;
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+  box-shadow: 0 0px 3px #42a5f5;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:active {
+  transform: scale(0.93);
+}
+
+.meta {
+  display: inline-block;
+}
+
+.field_layout {
+  display: table;
+  margin-bottom: 10px;
+}
+
+.field_layout:last-child {
+  margin-bottom: 0;
+}
+
+.label {
+  text-align: right;
+  display: table-cell;
+  width: 55px;
+  padding-right: 10px;
+  vertical-align: top;
+}
+
+.label span {
+  font-weight: bold;
+  display: inline-block;
+  color: #333;
+}
+
+.value {
+  display: table-cell;
+  vertical-align: top;
+  word-break: break-all;
+  text-align: left;
+  font-size: 15px;
+}
+
+@media screen and (min-width: 500px) {
+  .main_content {
+    width: 500px;
+  }
+  .meta {
+    margin: 5px 0 0 10px;
+    vertical-align: top;
+    max-width: 355px;
+  }
+  .header {
+    margin-bottom: 0;
+  }
+  .button {
+    margin-bottom: 0;
+  }
+}

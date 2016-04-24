@@ -1,0 +1,225 @@
+/*
+ *ROM-PacMe CSS: nav (navbar menu)
+ *(c) 2015 Rafael PacMe <rafy.pachecomendez@gmail.com>
+ */
+
+.contenedor {
+	width:100%;
+	max-width:1000%;
+	margin:auto;
+}
+
+.menu_bar {
+  display:none;
+  height: 80px;
+}
+.menu_bar .mobile-nav-button {
+  position: absolute;
+  right: 10px;
+  top: 25px;
+  display: inline-block;
+  width: 31px;
+  height: 60px;
+  border: 0;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+}
+.menu_bar .mobile-nav-button .bar {
+  width: 100%;
+  float: left;
+  height: 4px;
+  margin-bottom: 5px;
+  background-color: white;
+}
+.menu_bar .mobile-nav-button .bar:last-of-type {
+  margin-bottom: 0;
+}
+
+header {
+	width: 100%;
+}
+
+header nav {
+	background:#8BC34A;
+	z-index:1000;
+	width:100%;
+}
+
+header nav ul {
+	list-style:none;
+}
+
+header nav ul li {
+	display:inline-block;
+	position: relative;
+}
+
+header nav ul li:hover {
+	background:#8BC34A;
+}
+
+header nav ul li a {
+	color:#fff;
+	display:block;
+	text-decoration:none;
+	padding: 30px;
+}
+
+header nav ul li a span {
+	margin-right:1px;
+}
+
+header nav ul li:hover .children {
+	display:block;
+}
+
+header nav ul li .children {
+	display: none;
+	background:#8BC34A;
+	position: absolute;
+	width: 150%;
+	z-index:1000;
+}
+
+header nav ul li .children li {
+	display:block;
+	overflow: hidden;
+	border-bottom: 1px solid rgba(255,255,255,.5);
+}
+
+header nav ul li .children li a {
+	display: block;
+}
+
+header nav ul li .children li a span {
+	float: right;
+	position: relative;
+	top:3px;
+	margin-right:0;
+	margin-left:10px;
+}
+
+header nav ul li .caret {
+	position: relative;
+	top:3px;
+	margin-left:10px;
+	margin-right:0px;
+}
+
+header nav ul li>ul li:hover {
+	background: #AED581;
+	border-bottom: inset 5px solid #fff;
+}
+header nav ul li:hover {
+	box-shadow: 0px 0px 10px 0px #AED581;
+	background-color: #AED581;
+	transition-duration: 0.5s;
+	border-bottom: inset 5px solid #fff;
+}
+header nav ul li a:hover {
+	color: #fff;
+}
+/*sticky Scroll*/
+.lol-fixed {
+    position: fixed;
+    z-index: 1000;
+    max-width:1000%;
+    overflow: hidden;
+    background: #8BC34A;
+    transition-duration: 0.5s;
+    width:100%;
+}
+
+@media screen and (max-width: 800px) {
+	body {
+		padding-top:80px;
+	}
+
+	.menu_bar {
+		display:block;
+		width:100%;
+		position: fixed;
+		top:0;
+		background:#8BC34A;
+	}
+
+	.menu_bar .bt-menu {
+		display: block;
+		padding: 20px;
+		color: #fff;
+		overflow: hidden;
+		font-size: 25px;
+		font-weight: bold;
+		text-decoration: none;
+	}
+
+	.menu_bar span {
+		float: right;
+		font-size: 40px;
+	}
+
+	header nav {
+		width: 80%;
+		height: calc(100% - 80px);
+		position: fixed;
+		right:100%;
+		margin: 0;
+		overflow: scroll;
+	}
+
+	header nav ul li {
+		display: block;
+		border-bottom:1px solid rgba(255,255,255,.5);
+	}
+
+	header nav ul li a {
+		display: block;
+	}
+
+	header nav ul li:hover .children {
+		display: none;
+	}
+
+	header nav ul li .children {
+		width: 100%;
+		position: relative;
+	}
+
+	header nav ul li .children li a {
+		margin-left:20px;
+	}
+
+	header nav ul li .caret {
+		float: right;
+	}
+    
+    header nav ul li>ul li:hover {
+	background: #AED581;
+	border-bottom: inset 5px solid #fff;
+    }
+    
+    header nav ul li:hover {
+	box-shadow: 0px 0px 10px 0px #AED581;
+	background-color: #AED581;
+	transition-duration: 0.5s;
+	border-bottom: inset 5px solid #fff;
+    }
+    
+    header nav ul li a:hover {
+	color: #fff;
+    }
+    
+    /*sticky Scroll*/
+    .lol-fixed {
+	position: fixed;
+	z-index: auto;
+    max-width:1000%;
+    overflow: hidden;
+    background: #8BC34A;
+    transition-duration: 0.5s;
+	width:100%;
+    }
+
+}
+

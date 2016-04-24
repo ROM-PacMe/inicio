@@ -1,0 +1,26 @@
+/*
+ *ROM-PacMe CSS: materialnav (Material UI Nav Menu)
+ *(c) 2015 Rafael PacMe <rafy.pachecomendez@gmail.com>
+ */
+
+.contenedor2 {
+	width:90%;
+	max-width:1000%;
+	margin:auto;
+}
+header {
+	position: relative;
+	height: auto;
+}
+header .menu2 {
+	background: #8BC34A;
+	overflow: hidden;
+	box-shadow: 0px 1px 2px 0px #757575;
+}
+header .logo2 {
+	color: #ffffff;
+	text-align: center;
+	font-size: 30px;
+	line-height: 70px;
+    background: #689F38;
+}
